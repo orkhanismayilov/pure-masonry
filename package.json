@@ -1,0 +1,19 @@
+{
+  "name": "pure-masonry",
+  "version": "1.0.0",
+  "description": "Masonry Grid without absolute positioning",
+  "main": "lib",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && rollup -c",
+    "watch": "tsc -w",
+    "watch:rollup": "rollup -c -w"
+  },
+  "author": "Orkhan Ismayilov",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.1",
+    "rollup": "^3.21.0",
+    "typescript": "^5.0.4"
+  }
+}

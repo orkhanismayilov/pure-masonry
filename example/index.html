@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Pure Masonry Example</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        font: inherit;
+      }
+
+      img,
+      picture,
+      svg {
+        display: block;
+        max-width: 100%;
+      }
+
+      body {
+        background-color: hsl(0, 0%, 98%);
+      }
+
+      .container {
+        max-width: min(1200px, 100%);
+        margin-inline: auto;
+        padding: 1rem;
+      }
+
+      .images-wrapper {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+
+      .images-wrapper.show {
+        opacity: 1;
+      }
+
+      .images-wrapper img {
+        box-shadow: 0 0 15px 0 hsla(0, 0%, 0%, 0.2);
+      }
+
+      .images-wrapper img.gray {
+        filter: grayscale(1);
+      }
+    </style>
+    <script
+      src="./script.js"
+      type="module"
+      defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="images-wrapper">
+        <img
+          src="https://images.unsplash.com/photo-1682252232757-7a68fc8048c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&w=300&q=80"
+          alt="a group of orange and white feathers on a black background" />
+        <img
+          src="https://images.unsplash.com/photo-1682327751432-2d0ae8e5b361?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&w=300&q=80"
+          alt="a tall building in the middle of a desert" />
+        <img
+          src="https://images.unsplash.com/photo-1682250626570-f7c175de8a6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8&w=300&q=80"
+          alt="a close up of a brown and white marble" />
+        <img
+          src="https://images.unsplash.com/photo-1682169391623-46de7799b501?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHx8&w=300&q=80"
+          alt="a man standing on top of a mountain next to a large rock" />
+        <img
+          src="https://images.unsplash.com/photo-1682299225157-2bdce55fac2f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyN3x8fGVufDB8fHx8&w=300&q=80"
+          alt="a man in a red mask is squatting down" />
+        <img
+          src="https://images.unsplash.com/photo-1682178813848-2d31cb3b49e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMXx8fGVufDB8fHx8&w=300&q=80"
+          alt="a room that has a mirror on the floor" />
+        <img
+          src="https://images.unsplash.com/photo-1682254739590-bb652d6e768f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNnx8fGVufDB8fHx8&w=300&q=80"
+          alt="a black and gold background with circles" />
+        <img
+          src="https://images.unsplash.com/photo-1682319481156-5beb20db2a4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzOXx8fGVufDB8fHx8&w=300&q=80"
+          alt="a very tall building with a lot of windows" />
+        <img
+          src="https://images.unsplash.com/photo-1682314441048-a440197307b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0Mnx8fGVufDB8fHx8&w=300&q=80"
+          alt="a couple of palm trees standing next to each other" />
+        <img
+          src="https://images.unsplash.com/photo-1682321297054-519c8a76756b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1MHx8fGVufDB8fHx8&w=300&q=80"
+          alt="a green field with a tree in the middle of it" />
+        <img
+          src="https://images.unsplash.com/photo-1682310244779-6ec3ba82d2b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1NHx8fGVufDB8fHx8&w=300&q=80"
+          alt="an escalator in a subway station with yellow steps" />
+        <img
+          src="https://images.unsplash.com/photo-1682232860597-9e16a4972602?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1N3x8fGVufDB8fHx8&w=300&q=80"
+          alt="a full moon is seen in the dark sky" />
+        <img
+          src="https://images.unsplash.com/photo-1682167175858-bc7d1c1329bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2Mnx8fGVufDB8fHx8&w=300&q=80"
+          alt="a lone tree in the middle of a field at night" />
+        <img
+          src="https://images.unsplash.com/photo-1682160778546-5b7209af0efe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2NHx8fGVufDB8fHx8&w=300&q=80"
+          alt="an aerial view of snow covered trees and a road" />
+        <img
+          src="https://images.unsplash.com/photo-1682192354264-ed56b118a773?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3Mnx8fGVufDB8fHx8&w=300&q=80"
+          alt="a person standing in front of a wall with a cell phone" />
+        <img
+          src="https://images.unsplash.com/photo-1682101517715-71c48dc0cbea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4MHx8fGVufDB8fHx8&w=300&q=80"
+          alt="a pink flower and a green stem on a white background" />
+        <img
+          src="https://images.unsplash.com/photo-1682241229580-e72acdf0eb6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4NXx8fGVufDB8fHx8&w=300&q=80"
+          alt="a mountain range is reflected in the still water of a lake" />
+        <img
+          src="https://images.unsplash.com/photo-1682232878325-3d3b7203b352?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4Nnx8fGVufDB8fHx8&w=300&q=80"
+          alt="a woman standing in front of a window with her hand on her face" />
+        <img
+          src="https://images.unsplash.com/photo-1682251024337-1c540c69a670?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&w=300&q=80"
+          alt="a piece of wood with a name on it" />
+        <img
+          src="https://images.unsplash.com/photo-1682315700193-dec8f0ce2c81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&w=300&q=80"
+          alt="the shadow of a window on the side of a building" />
+        <img
+          src="https://images.unsplash.com/photo-1682329855504-457fa3beedd0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&w=300&q=80"
+          alt="the roof of a building with a sky background" />
+        <img
+          src="https://images.unsplash.com/photo-1682251008222-412b140cbf4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8&w=300&q=80"
+          alt="a woman's hand holding a bottle of perfume" />
+        <img
+          src="https://images.unsplash.com/photo-1682323621685-23b589fc65a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8&w=300&q=80"
+          alt="a man riding a bike down a snow covered street" />
+        <img
+          src="https://images.unsplash.com/photo-1682252232345-8254f1d6f636?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMXx8fGVufDB8fHx8&w=300&q=80"
+          alt="a group of white and brown plants on a gray background" />
+        <img
+          src="https://images.unsplash.com/photo-1682251024316-fcd478b8ad15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyM3x8fGVufDB8fHx8&w=300&q=80"
+          alt="a piece of rock with a ring around it" />
+        <img
+          src="https://images.unsplash.com/photo-1682199905799-d25555b05c4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8&w=300&q=80"
+          alt="a close up of a red rose on a black background" />
+        <img
+          src="https://images.unsplash.com/photo-1682193965090-26aac3a6f89b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNHx8fGVufDB8fHx8&w=300&q=80"
+          alt="a large turtle swimming in the water" />
+        <img
+          src="https://images.unsplash.com/photo-1682101853262-8c0344518d15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0MHx8fGVufDB8fHx8&w=300&q=80"
+          alt="a woman with dreadlocks standing in front of a wall" />
+        <img
+          src="https://images.unsplash.com/photo-1682008539260-630b0b721d81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0Nnx8fGVufDB8fHx8&w=300&q=80"
+          alt="a black and white photo of palm leaves" />
+        <img
+          src="https://images.unsplash.com/photo-1682283543390-92e4b16461c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0OHx8fGVufDB8fHx8&w=300&q=80"
+          alt="a lone tree in the middle of a green field" />
+        <img
+          src="https://images.unsplash.com/photo-1681958758197-0a37ed2e72b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1M3x8fGVufDB8fHx8&w=300&q=80"
+          alt="a woman sitting in a field of yellow flowers" />
+        <img
+          src="https://images.unsplash.com/photo-1681999683665-6902894af42c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1OHx8fGVufDB8fHx8&w=300&q=80"
+          alt="a couple of men standing in front of a colorful wall" />
+        <img
+          src="https://images.unsplash.com/photo-1681939692321-6c223ff53908?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2N3x8fGVufDB8fHx8&w=300&q=80"
+          alt="a woman is reading a book on a bed" />
+        <img
+          src="https://images.unsplash.com/photo-1682070545191-57347361ab03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2OHx8fGVufDB8fHx8&w=300&q=80"
+          alt="a woman in a trench coat is walking down the street" />
+        <img
+          src="https://images.unsplash.com/photo-1682193965136-c8650b543426?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3MXx8fGVufDB8fHx8&w=300&q=80"
+          alt="a polar bear standing on top of a rock" />
+        <img
+          src="https://images.unsplash.com/photo-1682100615261-27e4c446a2b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4MXx8fGVufDB8fHx8&w=300&q=80"
+          alt="a purple and blue background with two balls" />
+        <img
+          src="https://images.unsplash.com/photo-1682232923229-31a45274d924?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&w=300&q=80"
+          alt="a woman in a black top is covering her head with her hands" />
+        <img
+          src="https://images.unsplash.com/photo-1682334399851-9c79b3f415d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&w=300&q=80"
+          alt="a woman sitting on a couch reading a book" />
+        <img
+          src="https://images.unsplash.com/photo-1682251167570-db70af09f7a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&w=300&q=80"
+          alt="a couple of men standing next to a bike" />
+        <img
+          src="https://images.unsplash.com/photo-1682251675920-b07b8d2d05c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8&w=300&q=80"
+          alt="a close up of a person with dreadlocks" />
+        <img
+          src="https://images.unsplash.com/photo-1663570142388-8e4eb0fb2c70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8&w=300&q=80"
+          alt="a man holding a lighter" />
+        <img
+          src="https://images.unsplash.com/photo-1682318682229-e3928d926b9b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8&w=300&q=80"
+          alt="a busy city street at night with people crossing the street" />
+        <img
+          src="https://images.unsplash.com/photo-1682318669683-77e543d88583?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMnx8fGVufDB8fHx8&w=300&q=80"
+          alt="a woman walking across a street in front of a building" />
+        <img
+          src="https://images.unsplash.com/photo-1682161473727-402b497251b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNnx8fGVufDB8fHx8&w=300&q=80"
+          alt="a black and white photo of a tall building" />
+        <img
+          src="https://images.unsplash.com/photo-1682285626425-0c20d0d77e6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMHx8fGVufDB8fHx8&w=300&q=80"
+          alt="a close up of a red light in a dark room" />
+        <img
+          src="https://images.unsplash.com/photo-1682279438260-9ca27854054e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMnx8fGVufDB8fHx8&w=300&q=80"
+          alt="an empty room with a glass railing and white walls" />
+        <img
+          src="https://images.unsplash.com/photo-1682230755862-299a9ab40036?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNXx8fGVufDB8fHx8&w=300&q=80"
+          alt="a woman standing in front of a light in a dark room" />
+        <img
+          src="https://images.unsplash.com/photo-1682294883357-c2ddc321bac6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzN3x8fGVufDB8fHx8&w=300&q=80"
+          alt="a black and white photo of a building and a bridge" />
+        <img
+          src="https://images.unsplash.com/photo-1682200736161-77f04daf9a59?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0MXx8fGVufDB8fHx8&w=300&q=80"
+          alt="a black and gold object with a black background" />
+        <img
+          src="https://images.unsplash.com/photo-1682207151108-2dca7212f0eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0M3x8fGVufDB8fHx8&w=300&q=80"
+          alt="a little boy standing in a field of green plants" />
+        <img
+          src="https://images.unsplash.com/photo-1682310934381-ea1437927bd0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0NXx8fGVufDB8fHx8&w=300&q=80"
+          alt="a woman wearing sunglasses and a black shirt" />
+        <img
+          src="https://images.unsplash.com/photo-1682282299086-0e268e5db595?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0OXx8fGVufDB8fHx8&w=300&q=80"
+          alt="a woman kneeling down next to a dog" />
+        <img
+          src="https://images.unsplash.com/photo-1681986194654-0032f05d271f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1Mnx8fGVufDB8fHx8&w=300&q=80"
+          alt="a green door with three potted plants in front of it" />
+        <img
+          src="https://images.unsplash.com/photo-1682213916353-279defcd3003?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1OXx8fGVufDB8fHx8&w=300&q=80"
+          alt="the moon is seen through the clouds in the night sky" />
+        <img
+          src="https://images.unsplash.com/photo-1682070346575-8c6a27814963?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2M3x8fGVufDB8fHx8&w=300&q=80"
+          alt="a close up of a person holding a baby" />
+        <img
+          src="https://images.unsplash.com/photo-1682074902584-2c83bb4b0486?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2Nnx8fGVufDB8fHx8&w=300&q=80"
+          alt="a couple of tall buildings next to each other" />
+        <img
+          src="https://images.unsplash.com/photo-1680177377908-8fbdfe2947dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3M3x8fGVufDB8fHx8&w=300&q=80"
+          alt="an aerial view of a beach and ocean" />
+        <img
+          src="https://images.unsplash.com/photo-1682222925217-40650cf10cdd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3NXx8fGVufDB8fHx8&w=300&q=80"
+          alt="a sunset on a beach with a mountain in the distance" />
+        <img
+          src="https://images.unsplash.com/photo-1682017812985-9961980f20d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3N3x8fGVufDB8fHx8&w=300&q=80"
+          alt="the letter w is made up of red liquid" />
+        <img
+          src="https://images.unsplash.com/photo-1682195620288-712f0b970b55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3OXx8fGVufDB8fHx8&w=300&q=80"
+          alt="a purple jellyfish floating in the water" />
+        <img
+          src="https://images.unsplash.com/photo-1682167176130-5dc0cbb20402?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4Mnx8fGVufDB8fHx8&w=300&q=80"
+          alt="a lone tree in the middle of the night" />
+        <img
+          src="https://images.unsplash.com/photo-1682205802524-f0c1cd1ac9f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4NHx8fGVufDB8fHx8&w=300&q=80"
+          alt="a man and woman standing in a field of flowers" />
+        <img
+          src="https://images.unsplash.com/photo-1681986235081-67eae6384f55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4OHx8fGVufDB8fHx8&w=300&q=80"
+          alt="a branch with red flowers is casting a shadow on a wall" />
+      </div>
+      <div id="load-more"></div>
+    </div>
+  </body>
+</html>
