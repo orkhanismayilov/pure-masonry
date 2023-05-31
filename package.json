@@ -11,6 +11,13 @@
   },
   "author": "Orkhan Ismayilov",
   "license": "MIT",
+  "keywords": [
+    "pure",
+    "masonry",
+    "grid",
+    "js",
+    "javascript"
+  ],
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.1",
     "rollup": "^3.21.0",
