@@ -1,5 +1,5 @@
 {
-  "name": "pure-masonry-js",
+  "name": "pure-masonry-grid",
   "version": "1.0.0",
   "description": "Masonry Grid without absolute positioning and css",
   "main": "lib",
