@@ -1,7 +1,7 @@
 var PureMasonry = (function () {
     'use strict';
 
-    class PureMasonry {
+    class PureMasonryGrid {
         container;
         config;
         containerElem;
@@ -143,6 +143,6 @@ var PureMasonry = (function () {
         }
     }
 
-    return PureMasonry;
+    return PureMasonryGrid;
 
 })();

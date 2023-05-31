@@ -21,7 +21,7 @@ interface MasonryColumn {
     nativeElement: HTMLElement;
     full: boolean;
 }
-export declare class PureMasonry {
+export declare class PureMasonryGrid {
     container: string;
     config: MasonryGeneralConfig;
     containerElem: HTMLElement;
@@ -45,4 +45,4 @@ export declare class PureMasonry {
     setItemsClassName(className?: string, items?: HTMLElement[]): void;
 }
 export {};
-//# sourceMappingURL=pure-masonry.d.ts.map
+//# sourceMappingURL=pure-masonry-grid.d.ts.map

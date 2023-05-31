@@ -1,4 +1,4 @@
-class PureMasonry {
+class PureMasonryGrid {
     container;
     config;
     containerElem;
@@ -140,4 +140,4 @@ class PureMasonry {
     }
 }
 
-export { PureMasonry as default };
+export { PureMasonryGrid as default };

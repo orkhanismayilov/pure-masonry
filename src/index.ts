@@ -1,3 +1,3 @@
-import { PureMasonry } from './pure-masonry';
+import { PureMasonryGrid } from './pure-masonry-grid';
 
-export default PureMasonry;
+export default PureMasonryGrid;

@@ -26,7 +26,7 @@ interface MasonryColumn {
   full: boolean;
 }
 
-export class PureMasonry {
+export class PureMasonryGrid {
   containerElem: HTMLElement;
   gridItems: HTMLElement[] = [];
   columns: MasonryColumn[];
