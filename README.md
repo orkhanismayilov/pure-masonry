@@ -51,7 +51,7 @@ Now you can see the masonry grid with default config. Available config is descri
 
 ---
 
-### `columns (default: 4)`: number
+#### `columns (default: 4)`: number
 
 The count of columns.
 
