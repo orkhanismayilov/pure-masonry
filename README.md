@@ -18,7 +18,7 @@ Adding to project via npm
 npm i pure-masonry-grid
 ```
 
-or just download the files and include in your HTML via scripts tags as follows
+or just [download](https://github.com/orkhanismayilov/pure-masonry-grid/releases/latest) the files and include in your HTML via script tag as follows
 
 ```
 <script src="pure-masonry-grid/dist/pure-masonry-grid.min.js"></script>
