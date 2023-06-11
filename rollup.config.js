@@ -6,12 +6,12 @@ export default {
     {
       file: './dist/pure-masonry-grid.js',
       format: 'iife',
-      name: 'PureMasonry',
+      name: 'PureMasonryGrid',
     },
     {
       file: './dist/pure-masonry-grid.min.js',
       format: 'iife',
-      name: 'PureMasonry',
+      name: 'PureMasonryGrid',
       plugins: [terser({ keep_classnames: true })],
     },
     {

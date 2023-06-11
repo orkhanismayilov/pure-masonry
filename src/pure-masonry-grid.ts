@@ -1,6 +1,6 @@
 interface MasonryGridConfig {
   columns: number;
-  columnGap: number;
+  columnGap?: number;
   rowGap?: number;
 }
 
@@ -74,9 +74,8 @@ export class PureMasonryGrid {
       ...this.config,
     };
 
-    if (!this.config.rowGap || this.config.rowGap !== 0) {
-      this.config.rowGap = this.config.columnGap;
-    }
+    this.config.columnGap ??= 0;
+    this.config.rowGap ??= this.config.columnGap;
 
     this.init();
   }

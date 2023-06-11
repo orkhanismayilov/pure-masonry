@@ -1,6 +1,6 @@
 {
   "name": "pure-masonry-grid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Masonry Grid without absolute positioning and css",
   "main": "lib",
   "type": "module",

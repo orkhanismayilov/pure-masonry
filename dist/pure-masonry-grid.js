@@ -1,4 +1,4 @@
-var PureMasonry = (function () {
+var PureMasonryGrid = (function () {
     'use strict';
 
     class PureMasonryGrid {
@@ -44,9 +44,8 @@ var PureMasonry = (function () {
                 ...this.defaultConfig,
                 ...this.config,
             };
-            if (!this.config.rowGap || this.config.rowGap !== 0) {
-                this.config.rowGap = this.config.columnGap;
-            }
+            this.config.columnGap ??= 0;
+            this.config.rowGap ??= this.config.columnGap;
             this.init();
         }
         init() {

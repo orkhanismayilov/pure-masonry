@@ -1,6 +1,6 @@
 interface MasonryGridConfig {
     columns: number;
-    columnGap: number;
+    columnGap?: number;
     rowGap?: number;
 }
 interface MasonryBreakpointConfig {
