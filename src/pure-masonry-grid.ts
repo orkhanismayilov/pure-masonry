@@ -9,10 +9,9 @@ interface MasonryBreakpointConfig {
 }
 
 interface MasonryEventsConfig {
-  init: Function;
-  relayout: Function;
-  append: Function;
-  [event: string]: Function;
+  init?: Function;
+  relayout?: Function;
+  append?: Function;
 }
 
 interface MasonryGeneralConfig extends MasonryGridConfig {
